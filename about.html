@@ -257,6 +257,64 @@
       color: var(--text-secondary);
       font-size: 0.95rem;
     }
+
+    /* Profile Picture Frame */
+    .profile-frame {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--accent), #1d4ed8);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent), #1d4ed8);
+      border-radius: 12px;
+      opacity: 0.6;
+      z-index: -1;
+      animation: frameGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes frameGlow {
+      0%, 100% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.9;
+      }
+    }
+
+    .profile-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile-frame {
+        max-width: 280px;
+      }
+    }
   </style>
 </head>
 
@@ -329,22 +387,27 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-12 mt-12">
-        <div class="space-y-6">
-          <p class="text-text-secondary leading-relaxed">
-            I'm Chidera Pascal Samuel, a results-driven Data Analyst with a passion for transforming complex datasets 
-            into actionable insights. My journey in data analytics began with a deep curiosity about how organizations can 
-            leverage data to solve real-world problems and drive strategic growth.
-          </p>
-          <p class="text-text-secondary leading-relaxed">
-            As Team Lead at Chidex Data Consulting Services (CDCS), I have the privilege of designing data-driven solutions 
-            for diverse clients while mentoring junior analysts. My approach combines technical expertise with a strong 
-            emphasis on clear communication and measurable business outcomes.
-          </p>
-          <p class="text-text-secondary leading-relaxed">
-            Beyond my professional work, I'm deeply interested in blockchain technology and decentralized finance (DeFi). 
-            I believe in the power of data to democratize access to financial insights and empower informed decision-making 
-            across all sectors.
-          </p>
+        <div class="profile-container">
+          <div class="profile-frame">
+            <img src="profile.png" alt="Chidera Pascal Samuel, professional headshot wearing formal business attire against a dark background, presenting a confident and approachable demeanor suitable for a data analytics portfolio" />
+          </div>
+          <div class="space-y-6">
+            <p class="text-text-secondary leading-relaxed">
+              I'm Chidera Pascal Samuel, a results-driven Data Analyst with a passion for transforming complex datasets 
+              into actionable insights. My journey in data analytics began with a deep curiosity about how organizations can 
+              leverage data to solve real-world problems and drive strategic growth.
+            </p>
+            <p class="text-text-secondary leading-relaxed">
+              As Team Lead at Chidex Data Consulting Services (CDCS), I have the privilege of designing data-driven solutions 
+              for diverse clients while mentoring junior analysts. My approach combines technical expertise with a strong 
+              emphasis on clear communication and measurable business outcomes.
+            </p>
+            <p class="text-text-secondary leading-relaxed">
+              Beyond my professional work, I'm deeply interested in blockchain technology and decentralized finance (DeFi). 
+              I believe in the power of data to democratize access to financial insights and empower informed decision-making 
+              across all sectors.
+            </p>
+          </div>
         </div>
 
         <div class="space-y-6">
