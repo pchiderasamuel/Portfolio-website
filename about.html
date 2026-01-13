@@ -258,63 +258,7 @@
       font-size: 0.95rem;
     }
 
-    /* Profile Picture Frame */
-    .profile-frame {
-      position: relative;
-      width: 100%;
-      max-width: 320px;
-      aspect-ratio: 1 / 1;
-      margin: 0 auto;
-      border-radius: 12px;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--accent), #1d4ed8);
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .profile-frame::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, var(--accent), #1d4ed8);
-      border-radius: 12px;
-      opacity: 0.6;
-      z-index: -1;
-      animation: frameGlow 3s ease-in-out infinite;
-    }
-
-    @keyframes frameGlow {
-      0%, 100% {
-        opacity: 0.6;
-      }
-      50% {
-        opacity: 0.9;
-      }
-    }
-
-    .profile-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 30%;
-      border-radius: 10px;
-      display: block;
-    }
-
-    .profile-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .profile-frame {
-        max-width: 280px;
-      }
-    }
+   
   </style>
 </head>
 
