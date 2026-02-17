@@ -1,0 +1,32 @@
+{
+  "name": "Chidera Pascal Samuel - Data Analyst Portfolio",
+  "short_name": "Chidera Portfolio",
+  "description": "Professional portfolio of Chidera Pascal Samuel – Data Analyst & BI Consultant",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "new.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ]
+}
