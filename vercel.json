@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "framework": "static",
+  "public": true,
+  "env": [],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt",
+      "status": 200
+    },
+    {
+      "src": "/resume",
+      "dest": "/resume.html",
+      "status": 200
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html",
+      "status": 200
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html",
+      "status": 200
+    },
+    {
+      "src": "/experience",
+      "dest": "/experience.html",
+      "status": 200
+    },
+    {
+      "src": "/projects",
+      "dest": "/project.html",
+      "status": 200
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404
+    }
+  ]
+}
