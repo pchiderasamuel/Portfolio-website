@@ -1,0 +1,33 @@
+<!-- Configuration for Web3Forms - UPDATE THIS BEFORE DEPLOYING -->
+<script>
+  // Configuration object - Update these values
+  const portfolioConfig = {
+    web3FormsKey: 'YOUR_WEB3FORMS_ACCESS_KEY', // Get from https://web3forms.com
+    vercelDomain: 'your-portfolio.vercel.app', // Change after Vercel deployment
+    ownerEmail: 'pchiderasamuel@gmail.com', // Your email
+    formSubject: 'New Portfolio Contact Message'
+  };
+  
+  // Initialize form on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    updateFormConfiguration();
+  });
+  
+  function updateFormConfiguration() {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      const keyInput = form.querySelector('input[name="access_key"]');
+      const redirectInput = form.querySelector('input[name="redirect"]');
+      const subjectInput = form.querySelector('input[name="subject"]');
+      
+      if (keyInput) keyInput.value = portfolioConfig.web3FormsKey;
+      if (redirectInput) redirectInput.value = `https://${portfolioConfig.vercelDomain}/#contact`;
+      if (subjectInput) subjectInput.value = portfolioConfig.formSubject;
+      
+      // Warn if using placeholder values
+      if (portfolioConfig.web3FormsKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        console.warn('⚠️ Web3Forms key not configured. Contact form will not work.');
+      }
+    }
+  }
+</script>
