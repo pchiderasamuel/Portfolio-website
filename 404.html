@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found - Chidera Pascal Samuel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #3b82f6;
+      --text-primary: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --border: #334155;
+    }
+    
+    body {
+      background: linear-gradient(135deg, var(--primary) 0%, #1a1f3a 100%);
+      color: var(--text-primary);
+      font-family: 'Inter', system-ui, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-primary text-text-primary font-sans">
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="text-center">
+      <!-- Error Code -->
+      <div class="mb-8">
+        <h1 class="text-9xl font-bold text-accent mb-4">404</h1>
+        <p class="text-2xl font-semibold text-text-primary mb-2">Page Not Found</p>
+        <p class="text-text-secondary mb-8">Oops! The page you're looking for doesn't exist.</p>
+      </div>
+
+      <!-- Error Illustration (Simple) -->
+      <div class="mb-12">
+        <svg class="w-64 h-64 mx-auto opacity-20" fill="none" viewBox="0 0 100 100">
+          <path d="M50 20C34 20 22 32 22 48c0 20 28 28 28 28s28-8 28-28c0-16-16-28-28-28z" stroke="currentColor" stroke-width="2"/>
+          <circle cx="42" cy="45" r="3" fill="currentColor"/>
+          <circle cx="58" cy="45" r="3" fill="currentColor"/>
+          <path d="M45 55 Q50 58 55 55" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-4">
+        <a href="/" class="inline-block bg-accent text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+          Go Home
+        </a>
+        <p class="text-text-secondary text-sm">
+          <a href="/#contact" class="text-accent hover:underline">Contact me</a> if you believe this is an error.
+        </p>
+      </div>
+
+      <!-- Additional Help -->
+      <div class="mt-16 p-6 bg-secondary/20 rounded-lg border border-border/50">
+        <h3 class="text-text-primary font-semibold mb-3">Quick Links:</h3>
+        <nav class="space-y-2">
+          <a href="/#about" class="block text-accent hover:underline">About</a>
+          <a href="/#projects" class="block text-accent hover:underline">Projects</a>
+          <a href="/#experience" class="block text-accent hover:underline">Experience</a>
+          <a href="/#contact" class="block text-accent hover:underline">Contact</a>
+          <a href="/resume.html" class="block text-accent hover:underline">Resume</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed bottom-0 left-0 right-0 text-center py-4 text-text-muted text-xs border-t border-border">
+    <p>© 2026 Chidera Pascal Samuel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
