@@ -44,11 +44,6 @@
       "status": 200
     },
     {
-      "src": "/resume",
-      "dest": "/resume.html",
-      "status": 200
-    },
-    {
       "src": "/about",
       "dest": "/about.html",
       "status": 200
