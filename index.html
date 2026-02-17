@@ -516,6 +516,17 @@
         max-width: 280px;
       }
     }
+    .log{
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
   </style>
 </head>
 
@@ -524,7 +535,7 @@
 <!-- HEADER -->
 <header class="fixed w-full bg-primary/90 backdrop-blur z-50 border-b border-border">
   <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#hero" class="text-accent text-lg font-bold">Chidera Pascal Samuel</a>
+    <a href="#hero" class="text-accent text-lg font-bold navbar-brand"><img class="log" src="logo.jpeg" alt="Logo">Chidera Pascal Samuel</a>
 
     <div id="desktop-menu" class="hidden md:flex space-x-8 items-center">
       <a href="#about" class="nav-link text-sm">About</a>
@@ -555,29 +566,57 @@
 
 <main class="pt-20">
 
+  <!-- PORTFOLIO TITLE -->
+  <div class="text-center pt-20 pb-8">
+    <h2 class="text-3xl font-bold text-text-primary">CHIDERA PASCAL SAMUEL'S PORTFOLIO</h2>
+  </div>
+
   <!-- HERO SECTION -->
-  <section id="hero" class="min-h-screen flex items-center px-6 py-20 fade-up">
+  <section id="hero" class="py-20 px-6 fade-up">
     <div class="container mx-auto">
-      <div class="max-w-2xl">
-        <p class="section-subtitle mb-4">Hi, I'm</p>
-        <h1 class="hero-title mb-4">Chidera Pascal Samuel</h1>
-        <p class="text-xl text-text-secondary mb-6">Data Analyst & BI Consultant</p>
-        <p class="text-text-secondary mb-8 leading-relaxed max-w-xl">
-          I'm a passionate Data Analyst and DeFi enthusiast transforming raw data into strategic business intelligence. 
-          As Team Lead at Chidex Data Consulting Services, I specialize in crafting dashboards, automating insights, and 
-          optimizing decision-making using SQL, Python, Power BI, and Tableau.
-        </p>
-        <div class="flex gap-4">
-          <a href="#projects" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
-            View My Work
-          </a>
-          <a href="#contact" class="border border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent/10 transition">
-            Get In Touch
-          </a>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Content -->
+        <div class="max-w-2xl">
+          <p class="section-subtitle mb-4">DATA ANALYST, BI CONSULTANT & DEFI ENTHUSIAST</p>
+          <h1 class="hero-title mb-6">Chidera Pascal Samuel</h1>
+          <p class="text-text-secondary mb-8 leading-relaxed">
+            Hi, I'm Chidera Pascal Samuel, a Data Analyst driven by a passion for transforming data into actionable insights. 
+            I leverage tools like SQL, Power BI, Tableau, Python, and Excel to craft impactful data visualizations and solve 
+            complex business problems. As Team Lead at Chidex Data Consulting Services, I have developed data-driven solutions, 
+            mentored junior analysts, and tackled business challenges to achieve results. My mission is to optimize resource 
+            allocation, elevate business outcomes, and deliver insights that empower strategic decisions.
+          </p>
+          
+          <div class="flex gap-4">
+            <a href="#projects" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold">
+              View My Work
+            </a>
+            <a href="#contact" class="border border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent/10 transition font-semibold">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="flex justify-center md:justify-end">
+          <img class="image" src="new.png" alt="Chidera Pascal Samuel"/>
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+      .image{
+        width: 100%;
+        max-width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 5px rgba(255, 255, 255, 0.04),
+          0 0 35px rgba(90, 130, 220, 0.35);
+        object-fit: cover;
+      }
+  </style>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="py-20 px-6 bg-secondary/5 fade-up">
@@ -585,25 +624,27 @@
       <div class="section-divider">
         <h2>01. About Me</h2>
       </div>
+          
 
-          <div class="space-y-6">
-            <p class="text-text-secondary leading-relaxed">
-              I'm Chidera Pascal Samuel, a results-driven Data Analyst with a passion for transforming complex datasets 
-              into actionable insights. My journey in data analytics began with a deep curiosity about how organizations can 
-              leverage data to solve real-world problems and drive strategic growth.
-            </p>
-            <p class="text-text-secondary leading-relaxed">
-              As Team Lead at Chidex Data Consulting Services (CDCS), I have the privilege of designing data-driven solutions 
-              for diverse clients while mentoring junior analysts. My approach combines technical expertise with a strong 
-              emphasis on clear communication and measurable business outcomes.
-            </p>
-            <p class="text-text-secondary leading-relaxed">
-              Beyond my professional work, I'm deeply interested in blockchain technology and decentralized finance (DeFi). 
-              I believe in the power of data to democratize access to financial insights and empower informed decision-making 
-              across all sectors.
-            </p>
-          </div>
-        </div>
+              <div class="space-y-6">
+                <p class="text-text-secondary leading-relaxed">
+                  I'm Chidera Pascal Samuel, a results-driven Data Analyst with a passion for transforming complex datasets 
+                  into actionable insights. My journey in data analytics began with a deep curiosity about how organizations can 
+                  leverage data to solve real-world problems and drive strategic growth.
+                </p>
+                <p class="text-text-secondary leading-relaxed">
+                  As Team Lead at Chidex Data Consulting Services (CDCS), I have the privilege of designing data-driven solutions 
+                  for diverse clients while mentoring junior analysts. My approach combines technical expertise with a strong 
+                  emphasis on clear communication and measurable business outcomes.
+                </p>
+                <p class="text-text-secondary leading-relaxed">
+                  Beyond my professional work, I'm deeply interested in blockchain technology and decentralized finance (DeFi). 
+                  I believe in the power of data to democratize access to financial insights and empower informed decision-making 
+                  across all sectors.
+                </p>
+              </div>
+          
+    </div>
 
         <div class="space-y-6">
           <h3 class="text-text-primary">What Drives Me</h3>
@@ -930,7 +971,7 @@
             <li>▹ Interactive Power BI dashboard for stakeholder reporting</li>
           </ul>
           <div class="flex gap-4">
-            <a href="#" class="project-btn">View Dashboard</a>
+            <a href="https://app.powerbi.com/links/hvJwVu0s9l?ctid=336244f2-7209-49e5-9113-b67e885bbd3a&pbi_source=linkShare" class="project-btn">View Dashboard</a>
             <a href="#" class="project-btn secondary">Read Article</a>
           </div>
         </div>
@@ -1229,103 +1270,56 @@
           </form>
         </div>
 
-        <!-- Contact Info -->
-        <div class="space-y-6">
-          <h3 class="text-text-primary mb-6">Contact Details</h3>
-
-          <!-- Email -->
-          <div class="contact-info-item">
-            <h4><i class="fas fa-envelope mr-2"></i>Email</h4>
-            <p>
-              <a href="mailto:pchiderasamuel@gmail.com">pchiderasamuel@gmail.com</a>
-            </p>
-            <p class="text-text-muted text-sm mt-2">I typically respond within 24 hours.</p>
-          </div>
-
-          <!-- Phone -->
-          <div class="contact-info-item">
-            <h4><i class="fas fa-phone mr-2"></i>WhatsApp</h4>
-            <p>
-              <a href="https://wa.me/2349037674869" target="_blank">+234 903 767 4869</a>
-            </p>
-            <p class="text-text-muted text-sm mt-2">Available for quick chats and discussions.</p>
-          </div>
-
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-text-primary mb-8">Contact Information</h3>
+          
           <!-- Location -->
-          <div class="contact-info-item">
-            <h4><i class="fas fa-map-marker-alt mr-2"></i>Location</h4>
-            <p>Bayelsa, Nigeria</p>
-            <p class="text-text-muted text-sm mt-2">Open to remote opportunities worldwide.</p>
+          <div class="mb-8">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fas fa-map-marker-alt text-accent text-lg"></i>
+              <h4 class="text-text-primary font-semibold">Location</h4>
+            </div>
+            <p class="text-text-secondary ml-8">Bayelsa, Nigeria</p>
           </div>
-        </div>
-      </div>
-
-      <!-- SOCIAL LINKS SECTION -->
-      <div class="mt-20">
-        <div class="section-divider">
-          <h2>Follow Me</h2>
-        </div>
-
-        <p class="text-text-secondary max-w-2xl mb-12 mt-6">
-          Connect with me on social media to stay updated with my latest projects, insights, and data analytics content.
-        </p>
-
-        <div class="grid md:grid-cols-4 gap-6">
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/chidera-pascal-samuel" target="_blank" class="card">
-            <div class="text-center">
-              <div class="text-4xl mb-4 text-blue-500">
-                <i class="fab fa-linkedin"></i>
-              </div>
-              <h3 class="text-text-primary mb-2">LinkedIn</h3>
-              <p class="text-text-secondary text-sm mb-4">Connect professionally</p>
-              <a href="https://www.linkedin.com/in/chidera-pascal-samuel" target="_blank" class="text-accent hover:underline text-sm">
-                Visit Profile →
-              </a>
-            </div>
-          </a>
-
-          <!-- Twitter -->
-          <a href="https://twitter.com/chidera_sa70299" target="_blank" class="card">
-            <div class="text-center">
-              <div class="text-4xl mb-4 text-blue-400">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <h3 class="text-text-primary mb-2">Twitter</h3>
-              <p class="text-text-secondary text-sm mb-4">Daily insights & updates</p>
-              <a href="https://twitter.com/chidera_sa70299" target="_blank" class="text-accent hover:underline text-sm">
-                Follow Me →
-              </a>
-            </div>
-          </a>
-
-          <!-- GitHub -->
-          <a href="https://github.com" target="_blank" class="card">
-            <div class="text-center">
-              <div class="text-4xl mb-4 text-gray-400">
-                <i class="fab fa-github"></i>
-              </div>
-              <h3 class="text-text-primary mb-2">GitHub</h3>
-              <p class="text-text-secondary text-sm mb-4">Code & projects</p>
-              <a href="https://github.com" target="_blank" class="text-accent hover:underline text-sm">
-                View Repos →
-              </a>
-            </div>
-          </a>
 
           <!-- Email -->
-          <a href="mailto:pchiderasamuel@gmail.com" class="card">
-            <div class="text-center">
-              <div class="text-4xl mb-4 text-red-500">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <h3 class="text-text-primary mb-2">Email</h3>
-              <p class="text-text-secondary text-sm mb-4">Direct message</p>
-              <a href="mailto:pchiderasamuel@gmail.com" class="text-accent hover:underline text-sm">
-                Send Email →
-              </a>
+          <div class="mb-8">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fas fa-envelope text-accent text-lg"></i>
+              <h4 class="text-text-primary font-semibold">Email</h4>
             </div>
-          </a>
+            <p class="text-text-secondary ml-8">
+              <a href="mailto:pchiderasamuel@gmail.com" class="text-accent hover:underline">pchiderasamuel@gmail.com</a>
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-12">
+            <h4 class="text-text-primary font-semibold mb-4">Social Media</h4>
+            <div class="space-y-2">
+              <div>
+                <a href="https://twitter.com/chidera_sa70299" target="_blank" class="text-accent hover:underline text-sm">
+                  Twitter
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com" target="_blank" class="text-accent hover:underline text-sm">
+                  GitHub
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/chidera-pascal-samuel" target="_blank" class="text-accent hover:underline text-sm">
+                  LinkedIn
+                </a>
+              </div>
+              <div>
+                <a href="https://wa.me/2349037674869" target="_blank" class="text-accent hover:underline text-sm">
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1354,8 +1348,22 @@
 
 <!-- FOOTER -->
 <footer class="py-8 text-center text-text-muted font-mono text-sm">
-  <p>© 2026 Chidera Pascal Samuel. Designed & Built with passion.</p>
+  <img class="lo" src="logo.jpeg" alt="">
+  <p class="foot">© 2026 Chidera Pascal Samuel. Designed & Built with passion.</p>
 </footer>
+<style>
+  .lo{
+    width: 50px;
+    margin: 10px;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+  .foot{
+    align-self: center;
+  }
+</style>
 
 <!-- JS -->
 <script>
