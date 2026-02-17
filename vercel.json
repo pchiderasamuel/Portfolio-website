@@ -2,7 +2,7 @@
   "version": 2,
   "framework": "static",
   "public": true,
-  "env": [],
+  "env": {},
   "headers": [
     {
       "source": "/(.*)",
@@ -44,23 +44,8 @@
       "status": 200
     },
     {
-      "src": "/about",
-      "dest": "/about.html",
-      "status": 200
-    },
-    {
-      "src": "/contact",
-      "dest": "/contact.html",
-      "status": 200
-    },
-    {
-      "src": "/experience",
-      "dest": "/experience.html",
-      "status": 200
-    },
-    {
-      "src": "/projects",
-      "dest": "/project.html",
+      "src": "^/(?!.*\\.).*$",
+      "dest": "/index.html",
       "status": 200
     },
     {
