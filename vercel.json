@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "framework": "static",
+  "framework": "other",
   "public": true,
   "env": {},
   "headers": [
